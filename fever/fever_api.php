@@ -914,6 +914,10 @@ class FeverAPI extends Handler {
 		}
 		return false;
 	}
+
+	public function __construct($dbh, $request) {
+		$this->dbh = $dbh;
+	}
 }
 
 ?>
